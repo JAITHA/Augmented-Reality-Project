@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- include A-Frame obviously -->
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+        <a-marker type='pattern' url='pattern-letter-h.patt'>
+            <a-text value="Artifact: Heart" position="-1 0 1" rotation="-90 0 0" color="yellow"></a-text>
+            <a-text value="Name:  IT18115376" position="-1 0 2" rotation="-90 0 0" color="white"></a-text>
+            <a-image id="image1" src="heart.png" position="0 0 0" rotation="-90 0 0"></a-image>
+        </a-marker>
+        <a-marker type='pattern' url='pattern-letter-k.patt'>
+            <a-text value="Artifact: Kidney" position="-1 0 1" rotation="-90 0 0" color="yellow"></a-text>
+            <a-text value="Name:  IT18120530" position="-1 0 2" rotation="-90 0 0" color="white"></a-text>
+            <a-image id="image2" src="kidney.png" position="0 0 0" rotation="-90 0 0"></a-image>
+        </a-marker>
+        <a-marker type='pattern' url='pattern-letter-b.patt'>
+            <a-text value="Artifact: Brain" position="-1 0 1" rotation="-90 0 0" color="yellow"></a-text>
+            <a-text value="Name:  IT18062502" position="-1 0 2" rotation="-90 0 0" color="white"></a-text>
+            <a-image id="image3" src="brain.png" position="0 0 0" rotation="-90 0 0"></a-image>
+        </a-marker>
+        <a-marker type='pattern' url='pattern-letter-e.patt'>
+            <a-text value="Artifact: Eye" position="-1 0 1" rotation="-90 0 0" color="yellow"></a-text>
+            <a-text value="Name:  IT18114904" position="-1 0 2" rotation="-90 0 0" color="white"></a-text>
+            <a-image id="image4" src="eye.png" position="0 0 0" rotation="-90 0 0"></a-image>
+        </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
